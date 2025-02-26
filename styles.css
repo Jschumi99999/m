@@ -42,7 +42,6 @@ body {
     color: #000;
     text-align: left;
     margin-top: 20px;
-    margin-bottom: 0;
 }
 
 .header_text_yes {
@@ -58,7 +57,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-bottom:15px;
 }
 
 .btn {
