@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#d6d2cb" />
+        <title>Maya ♡</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        
+    </head> 
+    <body>
+        <div class="container">
+                <p class = "header_text">Liebe Maya,<br/>
+                möchtest du meine Freundin sein?
+                </p>
+                <div class="gif_container">
+                    <img src="rose.png" alt="rose">
+                </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="yesPage()">Ja</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Nein</button>
+                <script>
+                    function yesPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
