@@ -1,3 +1,18 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    font-family: "Caveat", serif;
+    scroll-behavior: smooth;
+    color: #000;
+  }
+
+
 body {
     display:grid;
     justify-items: center;
@@ -7,7 +22,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding:10px;
-    font-family: "Caveat", serif;
 }
 
 .container{
@@ -39,7 +53,6 @@ body {
 .header_text {
     font-size: 16px;
     font-weight: 500;
-    color: #000;
     text-align: left;
     margin-top: 20px;
 }
@@ -47,7 +60,6 @@ body {
 .header_text_yes {
     font-size: 60px;
     font-weight: 500;
-    color: #000;
     text-align: center;
 }
 
@@ -62,7 +74,6 @@ body {
 
 .btn {
     background-color: #ffffff;
-    color: #000;
     text-align: center;
     display: inline-block;
     font-family: "Caveat", serif;
